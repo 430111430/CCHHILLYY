@@ -162,7 +162,7 @@ export default class BusinessPortraits extends Vue {
 #container[view-portraits] {
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/bg2.png");
+  background-image: url("../../assets/bg2.jpg");
   background-size: cover;
 }
 
