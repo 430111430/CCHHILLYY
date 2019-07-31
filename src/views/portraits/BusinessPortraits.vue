@@ -164,6 +164,7 @@ export default class BusinessPortraits extends Vue {
   height: 100%;
   background-image: url("../../assets/bg2.jpg");
   background-size: cover;
+  background-position-y: -370px;
 }
 
 #main-panel[view-portraits] {

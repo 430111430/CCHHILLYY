@@ -10,18 +10,18 @@
     </div>
 
     <div id="details"  v-show="showingTag!=''">
-      <img v-show="showingTag=='associate'" class="fake-details" src="../../assets/associate.jpg" alt />
-      <img v-show="showingTag=='financial'" class="fake-details" src="../../assets/financial.jpg" alt />
-      <img v-show="showingTag=='manage'" class="fake-details" src="../../assets/manage.jpg" alt />
-      <img v-show="showingTag=='administration'" class="fake-details" src="../../assets/administration.jpg" alt />
-      <img v-show="showingTag=='lawsuit'" class="fake-details" src="../../assets/lawsuit.jpg" alt />
       <div id="details-tag-panel">
         <div class="details-tag" tag="associate" @click="onTagSelected" v-bind:class="{ active: showingTag=='associate' }">关联风险</div>
         <div class="details-tag" tag="financial" @click="onTagSelected" v-bind:class="{ active: showingTag=='financial' }">财务风险</div>
         <div class="details-tag" tag="manage" @click="onTagSelected" v-bind:class="{ active: showingTag=='manage' }">经营风险</div>
         <div class="details-tag" tag="administration" @click="onTagSelected" v-bind:class="{ active: showingTag=='administration' }">行政风险</div>
-        <div class="details-tag" tag="lawsuit" @click="onTagSelected" v-bind:class="{ active: showingTag=='lawsuit' }">诉讼&舆情风情</div>
+        <div class="details-tag" tag="lawsuit" @click="onTagSelected" v-bind:class="{ active: showingTag=='lawsuit' }">诉讼&舆情风险</div>
       </div>
+      <img v-show="showingTag=='associate'" class="fake-details" src="../../assets/associate.jpg" alt />
+      <img v-show="showingTag=='financial'" class="fake-details" src="../../assets/financial.jpg" alt />
+      <img v-show="showingTag=='manage'" class="fake-details" src="../../assets/manage.jpg" alt />
+      <img v-show="showingTag=='administration'" class="fake-details" src="../../assets/administration.jpg" alt />
+      <img v-show="showingTag=='lawsuit'" class="fake-details" src="../../assets/lawsuit.jpg" alt />
     </div>
 
     <!-- <div class="details-item">
@@ -122,6 +122,7 @@ export default class Details extends Vue {
 #details-tag-panel {
   display: flex;
   margin-top: -5%;
+  background-color: rgba(13, 23, 23, 1);
 }
 
 .details-tag {
